@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="view_res_partner_form_inherit_bakoni" model="ir.ui.view">
+        <field name="name">res.partner.form.inherit.bakoni</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <field name="vat" position="after">
+                <field name="medical_aid_name" required="1"/>
+                <field name="medical_aid_number" required="1"/>
+                <field name="patient_id_number" required="1"/>
+                <field name="customer_type" required="1"/>
+                <field name="practice_number" required="1"/>
+                <field name="tender_ref"/>
+            </field>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_nappi_code,access_nappi_code,model_nappi_code,base.group_user,1,1,1,0
+access_icd_10_code,access_icd_10_code,model_icd_10_code,base.group_user,1,1,1,0

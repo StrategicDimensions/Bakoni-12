@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="report_invoice_document_inherit_bakoni" inherit_id="account.report_invoice_document">
+        <xpath expr="//div[@name='reference']" position="after">
+            <div name="tender_ref" t-if="o.tender_ref" class="mr32">
+                <strong>Tender Reference:</strong>
+                <p t-field="o.tender_ref"/>
+            </div>
+        </xpath>
+        <xpath expr="//div[@name='customer_code']/strong" position="replace">
+            <strong>Customer Reference:</strong>
+        </xpath>
+        <xpath expr="//div[@id='qrcode']" position="after">
+            <p>
+                <span><strong>Bakoni Medical</strong></span><br/>
+                <span><strong>FNB Bank</strong></span><br/>
+                <span><strong>Branch:</strong> Menlyn</span><br/>
+                <span>62575563080</span>
+            </p>
+        </xpath>
+    </template>
+</odoo>
